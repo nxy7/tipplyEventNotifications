@@ -14,7 +14,10 @@ class TipplyListener:
         '''Takes callbacks that should be fired when donation occurs and when it stops being displayed'''
         chromeOptions = Options()
 
-        chromeOptions.add_argument("--headless")
+        chromeOptions.headless = True
+        
+        chromeOptions.add_argument("—disable-gpu")
+        chromeOptions.add_argument("--no-sandbox")
         driver = webdriver.Chrome(options=chromeOptions)
 
         driver.get(self.url)
