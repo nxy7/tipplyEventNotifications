@@ -17,3 +17,56 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1686597847960	geckodriver	INFO	Listening on 127.0.0.1:47339
+1686597848494	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... ox" "--remote-debugging-port" "40847" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile3E2xfB"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686597848695	Marionette	INFO	Marionette enabled
+1686597848697	Marionette	INFO	Listening on port 35607
+console.error: "Warning: unrecognized command line flag -no-sandbox\n"
+WebDriver BiDi listening on ws://127.0.0.1:40847
+Read port: 35607
+1686597848888	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:40847/devtools/browser/d5e298ec-3e7f-4975-b74b-bb351ca6e0bf
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1686598124575	geckodriver	INFO	Listening on 127.0.0.1:42647
+1686598125108	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... ox" "--remote-debugging-port" "59315" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFV9NpY"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686598125309	Marionette	INFO	Marionette enabled
+1686598125312	Marionette	INFO	Listening on port 36313
+console.error: "Warning: unrecognized command line flag -no-sandbox\n"
+WebDriver BiDi listening on ws://127.0.0.1:59315
+Read port: 36313
+1686598125504	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:59315/devtools/browser/2dcfbdad-a294-4d58-b63c-0bb63a8523c3
+1686598146060	geckodriver	INFO	Listening on 127.0.0.1:55703
+1686598146595	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/nix ... ox" "--remote-debugging-port" "44903" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXgTIZK"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686598146792	Marionette	INFO	Marionette enabled
+1686598146795	Marionette	INFO	Listening on port 36211
+Read port: 36211
+console.error: "Warning: unrecognized command line flag -no-sandbox\n"
+WebDriver BiDi listening on ws://127.0.0.1:44903
+1686598146869	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:44903/devtools/browser/47bffd73-c528-44dd-9eb8-fc8c9fd4bedb
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

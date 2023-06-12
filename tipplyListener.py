@@ -6,6 +6,19 @@ from selenium.webdriver.common.by import By
 import time
 # from webdriver_manager.chrome import ChromeDriverManager
 
+from selenium.webdriver.support.wait import WebDriverWait
+def pageReady(driver):
+    while True:
+        try:
+            el = driver.find_element(By.CSS_SELECTOR, ".tpl-nickname")
+            print("element available")
+            return True
+        except:
+            print("Waiting till top donor info is available")
+            time.sleep(3)
+            
+
+
 class TipplyListener:
     '''Class responsible for listening to and reacting to Tipply stream events'''
     def __init__(self, url):
@@ -22,6 +35,7 @@ class TipplyListener:
         driver = webdriver.Firefox(options=ffOptions)
 
         driver.get(self.url)
+        WebDriverWait(driver, timeout=10).until(pageReady)
 
         lastName = ""
         while True:
