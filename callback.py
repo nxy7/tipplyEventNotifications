@@ -1,6 +1,25 @@
+import requests
+import os
+
+
+webhookUrl = os.getenv("WEBHOOK_URL")
+
+
 def onCallback():
-    print("on")
+    url = webhookUrl+"/on"
+    try:
+        requests.get(url)
+    except:
+        print("")
+    finally:
+        print("on")
 
 
 def offCallback():
-    print("off")
+    url = webhookUrl+"/off"
+    try:
+        requests.get(url)
+    except:
+        print("")
+    finally:
+        print("off")
