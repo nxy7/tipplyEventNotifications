@@ -1,5 +1,6 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 
 import time
@@ -12,13 +13,13 @@ class TipplyListener:
 
     def startListening(self, onCallback, offCallback):
         '''Takes callbacks that should be fired when donation occurs and when it stops being displayed'''
-        chromeOptions = Options()
+        ffOptions = Options()
 
-        chromeOptions.headless = True
+        ffOptions.headless = True
         
-        chromeOptions.add_argument("—disable-gpu")
-        chromeOptions.add_argument("--no-sandbox")
-        driver = webdriver.Chrome(options=chromeOptions)
+        ffOptions.add_argument("—disable-gpu")
+        ffOptions.add_argument("--no-sandbox")
+        driver = webdriver.Firefox(options=ffOptions)
 
         driver.get(self.url)
 
