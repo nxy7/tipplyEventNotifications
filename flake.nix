@@ -19,11 +19,9 @@
           packages = with pkgs; [
             firefox
             geckodriver
-            chromium
-            chromedriver
             python311
             python311Packages.selenium
-            python311Packages.pip
+            python311Packages.requests
             python311Packages.python-dotenv
             python311Packages.python-lsp-server
           ];
