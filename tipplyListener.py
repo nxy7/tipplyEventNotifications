@@ -38,11 +38,14 @@ class TipplyListener:
         WebDriverWait(driver, timeout=10).until(pageReady)
 
         lastName = ""
+        amount = "2,00 zł"
         while True:
-            el = driver.find_element(By.CSS_SELECTOR, ".tpl-nickname")
-            if lastName != el.text:
+            nameDiv = driver.find_element(By.CSS_SELECTOR, ".tpl-nickname")
+            amountDiv = driver.find_element(By.CSS_SELECTOR, ".Container-q03zjo-0")
+            if lastName != nameDiv.text || amount != amountDiv.text:
                 print("New donation")
-                lastName = el.text
+                lastName = nameDiv.text
+                amount = amountDiv.text
                 onCallback()
                 time.sleep(6)
                 offCallback()
